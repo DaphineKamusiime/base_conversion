@@ -9,25 +9,34 @@ print("a. Decimal to Hexadecimal ")
 print("b. Decimal to Octal")
 print("c. Decimal to Binary")
  
-# taking user input
-print("Enter your choice :- ")
-choice = input()
- 
-# Running a variable choice
-# Hexadecimal form if choice
-# is set to 'a'
+
+   
+#while choice !='a' or choice!='b' or choice!='c' :
+
+choice = input(print("Enter your choice : "))
+    
+#if choice !='a' or choice!='b' or choice!='c':
+#    continue
+    
 if choice =='a':
- 
-    # lstrip helps remove "0x" from the left
-    # rstrip helps remove "L" from the right,
-    # L represents a long number
-    print("Hexadecimal form of " + str(number) +
-        " is " + hex(number).lstrip("0x").rstrip("L"))
-         
+        print("Hexadecimal form of " + str(number) +
+            " is " + hex(number).lstrip("0x").rstrip("L"))
+            
 if choice == 'b':
-    print("Octal form of " + str(number) +
-        " is " + oct(number).lstrip("0o").rstrip("L"))
-         
+        print("Octal form of " + str(number) +
+            " is " + oct(number).lstrip("0o").rstrip("L"))
+            
 if choice == 'c':
-    print("Binary form of " + str(number) +
-        " is "+bin(number).lstrip("0b").rstrip("L"))
+        print("Binary form of " + str(number) +
+            " is "+bin(number).lstrip("0b").rstrip("L"))
+        
+#else:
+ #   print("Wrong input")
+    
+    #break 
+ 
+        
+    
+        # lstrip helps remove "0x" from the left
+        # rstrip helps remove "L" from the right,
+        # L represents a long number
